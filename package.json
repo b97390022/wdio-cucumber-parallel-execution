@@ -1,0 +1,53 @@
+{
+  "name": "@b97390022/wdio-cucumber-parallel-execution",
+  "version": "1.0.0",
+  "description": "WebdriverIO Package to execute Cucumber scenarios in parallel",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint ./src/**/*.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx babel src -d dist --presets=@babel/preset-typescript,@babel/preset-env --extensions \".ts,.tsx\""
+  },
+  "keywords": [
+    "webdriverio",
+    "parallel",
+    "cucumber",
+    "speed",
+    "execution",
+    "feature",
+    "scenario"
+  ],
+  "author": "Bruce Chen",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b97390022/wdio-cucumber-parallel-execution.git"
+  },
+  "bugs": "https://github.com/b97390022/wdio-cucumber-parallel-execution/issues",
+  "dependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@cucumber/gherkin": "^28.0.0",
+    "@cucumber/tag-expressions": "^6.1.0",
+    "fs-extra": "^11.2.0",
+    "glob": "^10.4.1",
+    "lodash": "^4.17.21",
+    "node-dir": "^0.1.17",
+    "uniqid": "^5.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/plugin-transform-arrow-functions": "^7.24.7",
+    "@babel/plugin-transform-typescript": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "@types/eslint": "8.56.10",
+    "babel-preset-typescript": "^7.0.0-alpha.19",
+    "chalk": "^5.3.0",
+    "eslint": "9.4.0",
+    "husky": "9.0.11",
+    "node-emoji": "^2.1.3"
+  }
+}

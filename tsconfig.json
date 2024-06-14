@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "lib": ["dom", "esnext"],
+      "noEmit": true,
+      "isolatedModules": true,
+      "target": "ESNext",
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "allowImportingTsExtensions": true,
+    },
+    "exclude": [
+      "./node_modules"
+    ],
+    "include": [
+      "./src/**/*.ts"
+    ],
+  }
